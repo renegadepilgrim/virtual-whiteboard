@@ -23,21 +23,23 @@ $(document).ready(function() {
       alert("Try again!");
     }
   });
-  $("#HOMEPAGE form").submit(function(event) {
+  $(".container .form").submit(function(event) {
     event.preventDefault();
 
-    var eventTitle = $("#EVENTTITLE").val();
-    var eventTime = $("").val();
-    var eventLocation = $("").val();
-    var meetupLocation = $("").val();
-    var eventDescription = $("").val();
+    var eventTitle = $("#event").val();
+    var eventTime = $("#date option:selected").val();
+    console.log(eventTime);
+    var eventLocation = $("#location").val();
+    var meetupLocation = $("#meetuplocation").val();
+    var eventDescription = $("#description").val();
 
-    var creatorName = $("").val();
-    var creatorContact = $("").val();
+    var creatorName = $("#name").val();
+    var creatorContactEmail = $("#email").val();
+    var creatorContactPhone = $("#phone").val();
 
-    $("#SHOW").text(event1.eventTitle);
+
 
     var event1 = new Event(eventTitle, eventTime, eventLocation, meetupLocation, eventDescription);
-    var creator1 = new Creator(creatorName, creatorContact);
+    //var creator1 = new Creator(creatorName, creatorContact);
   });
 });
