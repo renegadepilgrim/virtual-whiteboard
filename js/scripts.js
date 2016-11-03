@@ -14,6 +14,15 @@ function Creator(creator, creatorContact) {
 
 // user interface logic
 $(document).ready(function() {
+  $("#login-button").click(function(event) {
+    event.preventDefault();
+    var getin = $("#pass-input").val();
+    if (getin=="peppermint") {
+      location.href='index.html'
+    } else {
+      alert("Try again!");
+    }
+  });
   $("#HOMEPAGE form").submit(function(event) {
     event.preventDefault();
 
