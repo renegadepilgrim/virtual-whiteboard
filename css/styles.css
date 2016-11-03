@@ -1,0 +1,18 @@
+.styles1 {
+  min-width: 200px;
+  text-align: center;
+}
+.jumbotron {
+  height: 183px;
+  margin: 2px;
+  padding: 60px;
+  margin-bottom: 10px;
+  background-image: url(../img/social-thing.jpg);
+}
+.jumbotron h2 {
+  text-align: center;
+  color: blue;
+  font-family: cursive;
+  margin-top: -20px;
+  font-weight: bolder;
+}
