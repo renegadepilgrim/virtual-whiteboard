@@ -1,3 +1,12 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+}
+
+form {
+  width: 100%;
+}
+
 .styles1 {
   min-width: 200px;
   text-align: center;
@@ -7,12 +16,20 @@
   margin: 2px;
   padding: 60px;
   margin-bottom: 10px;
-  background-image: url(../img/social-thing.jpg);
+  background-size: cover;
+  background-image: url(../img/banner.jpg);
+  border: solid;
+  border-width: 1px;
+  border-color: #a8a5a6;
+  posistion:relative;
+  z-index: 2;
+  box-shadow: 0 6px 15px -6px #a8a5a6;
 }
 .jumbotron h2 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 10px;
+  font-size: 75px;
   text-align: center;
-  color: blue;
-  font-family: cursive;
+  color: #FFF;
   margin-top: -20px;
-  font-weight: bolder;
 }
