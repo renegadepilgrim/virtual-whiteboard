@@ -1,3 +1,12 @@
+#page-wed,
+#page-thur,
+#page-fri,
+#page-sat,
+#page-sun,
+#page-mon {
+  display: none;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
@@ -7,10 +16,37 @@ form {
   width: 100%;
 }
 
+.event-item p {
+  border-bottom: 1px solid lightgrey;
+}
+
+div.event-item {
+  margin-bottom: 10px;
+}
+
+#login-box {
+  display: inline-block;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+}
+
+.login-wrapper {
+  text-align: center;
+}
+
+.event-item {
+  padding: 10px;
+  border: black 1px solid;
+}
+
 .styles1 {
   min-width: 200px;
   text-align: center;
 }
+
 .jumbotron {
   height: 183px;
   margin: 2px;
@@ -21,10 +57,11 @@ form {
   border: solid;
   border-width: 1px;
   border-color: #a8a5a6;
-  posistion:relative;
+  position: relative;
   z-index: 2;
   box-shadow: 0 6px 15px -6px #a8a5a6;
 }
+
 .jumbotron h2 {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 10px;
