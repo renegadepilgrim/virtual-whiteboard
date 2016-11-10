@@ -12,80 +12,598 @@
     <div class="container">
       <header class="page-header text-center">
         <ul class="nav nav-pills fixed-top">
-          <li class="active styles1"><a href="index.html">Home</a></li>
-          <li><a href="wednesday.html">Wednesday</a></li>
-          <li><a href="thursday.html">Thursday</a></li>
-          <li><a href="friday.html">Friday</a></li>
-          <li><a href="saturday.html">Saturday</a></li>
-          <li><a href="sunday.html">Sunday</a></li>
-          <li><a href="monday.html">Monday</a></li>
+          <li id="link1" class="active styles1"><a id="link-home" href="index.html">Home</a></li>
+          <li><a id="link-wed" href="#">Wednesday</a></li>
+          <li><a id="link-thur" href="#">Thursday</a></li>
+          <li><a id="link-fri" href="#">Friday</a></li>
+          <li><a id="link-sat" href="#">Saturday</a></li>
+          <li><a id="link-sun" href="#">Sunday</a></li>
+          <li><a id="link-mon" href="#">Monday</a></li>
         </ul>
       </header>
-      <div class ="jumbotron">
-        <h2>GCN Conference</h2>
-      </div><br><br>
-      <div class="row">
-        <div class="col-md-2">
+    </div>
+
+    <div id="page-home">
+      <div class="container">
+        <div class ="jumbotron">
+          <h2>GCN Conference</h2>
         </div>
-        <div class="col-md-8">
-          <form class="form centered">
-            <div class="form-group">
-              <label for="event">Event</label>
-              <input type="text" class="form-control" id="event" placeholder="Event Name">
-            </div>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Jane Doe">
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="jane.doe@example.com">
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="text" class="form-control" id="phone" placeholder="(XXX) XXX-XXXX">
-            </div>
-            <div class="form-group">
-              <label for="Location">Location</label>
-              <input type="text" class="form-control" id="location" placeholder="Meeting Location, 1234 State St., Portland, OR 97202">
-            </div>
-            <div class="form-group">
-              <label for="Meetup Location">Meetup Location</label>
-              <input type="text" class="form-control" id="meetuplocation" placeholder="Hotel lobby near the concierge desk">
-            </div>
-            <div class="form-group">
-              <label for="Description">Description</label>
-              <input type="text" class="form-control" id="description" placeholder="Describe your event">
-            </div>
-            <div class="form-group">
-              <p><strong>Date</strong></p>
-              <!-- <label for="date">Date</label> -->
-              <select class="form-control" id="date">
-                <option value="weds">Wednesday, January 4, 2017</option>
-                <option value="thurs">Thursday, January 5, 2017</option>
-                <option value="fri">Friday, January 6, 2017</option>
-                <option value="sat">Saturday, January 7, 2017</option>
-                <option value="sun">Sunday, January 8, 2017</option>
-                <option value="mon">Monday, January 9, 2017</option>
-              </select>
-            </div>
-            <p>Time</p>
-            <div class="input-group clockpicker">
-              <input type="text" class="form-control" value="09:30">
-              <span class="input-group-addon">
-                <span class="glyphicon glyphicon-time"></span>
-              </span>
-            </div>
-    <script type="text/javascript">
-    $('.clockpicker').clockpicker();
-    </script>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-md-2">
+
+          </div>
+          <div class="col-md-8">
+            <form class="form centered">
+              <div class="form-group">
+                <label for="event">Event</label>
+                <input type="text" class="form-control" id="event" placeholder="Event Name">
+              </div>
+              <div class="form-group">
+                <label for="Location">Location</label>
+                <input type="text" class="form-control" id="location" placeholder="Include meeting location and/or address of meetup.">
+              </div>
+              <div class="form-group">
+                <p><strong>Date</strong></p>
+                <select class="form-control" id="date">
+                  <option value="Wednesday, January 4, 2017">Wednesday, January 4, 2017</option>
+                  <option value="Thursday, January 5, 2017">Thursday, January 5, 2017</option>
+                  <option value="Friday, January 6, 2017">Friday, January 6, 2017</option>
+                  <option value="Saturday, January 7, 2017">Saturday, January 7, 2017</option>
+                  <option value="Sunday, January 8, 2017">Sunday, January 8, 2017</option>
+                  <option value="Monday, January 9, 2017">Monday, January 9, 2017</option>
+                </select>
+              </div>
+              <label for="time">Time</label>
+              <div class="input-group clockpicker">
+                <input type="text" class="form-control" id="time" placeholder="09:15 AM">
+                <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-time"></span>
+                </span>
+              </div>
+              <div class="form-group" style="margin-top: 10px;">
+                <label for="Description">Description</label>
+                <input type="text" class="form-control" id="description" placeholder="Describe your event">
+              </div>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Jane Doe">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="jane.doe@example.com">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" class="form-control" id="phone" placeholder="(XXX) XXX-XXXX">
+              </div>
+
               <br>
-            <button for="form" type="submit" id="submit-btn" class="btn btn-success">Submit</button>
-        </form>
-      </div>
-      <div class="col-md-2">
+              <button for="form" type="submit" id="submit-btn" class="btn btn-success">Create an Event!</button>
+            </form>
+          </div>
+
+          <div class="col-md-2">
+
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+
+    <div id="page-wed">
+      <div class="container">
+        <h1>Wednesday</h1>
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Wednesday, January 4, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Wednesday, January 4, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Wednesday, January 4, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Wednesday, January 4, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Wednesday, January 4, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="page-thur">
+      <div class="container">
+        <h1>Thursday</h1>
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Thursday, January 5, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Thursday, January 5, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Thursday, January 5, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Thursday, January 5, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Thursday, January 5, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="page-fri">
+      <div class="container">
+        <h1>Friday</h1>
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Friday, January 6, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Friday, January 6, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Friday, January 6, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Friday, January 6, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Friday, January 6, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page-sat">
+      <div class="container">
+        <h1>Saturday</h1>
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Saturday, January 7, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Saturday, January 7, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Saturday, January 7, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Saturday, January 7, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Saturday, January 7, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="page-sun">
+      <div class="container">
+        <h1>Sunday</h1>
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Sunday, January 8, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Sunday, January 8, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Sunday, January 8, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Sunday, January 8, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Sunday, January 8, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="page-mon">
+      <div class="container">
+        <h1>Monday</h1>
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Monday, January 9, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Monday, January 9, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Monday, January 9, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Monday, January 9, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+
+        <div class="row event-item">
+          <div class="col-md-6">
+            <p>Event: Epicodus Class</p>
+            <p>Date and Time: Monday, January 9, 2017 12:00</p>
+            <p>Location: Main Hall</p>
+          </div>
+          <div class="col-md-6">
+            <p>Name: Mr. Awesome</p>
+            <p>Email: example@gmail.com</p>
+            <p>Phone: 503-123-4567</p>
+          </div>
+          <div class="col-md-12">
+            <p>Description: To learn HTML, CSS JavaScript and a lot of other cool stuff.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <hr>
+        <p>&copy; 2016 Virtual Whiteboard</p>
+      </div>
+    </footer>
   </body>
 </html>
